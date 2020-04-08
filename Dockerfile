@@ -4,6 +4,8 @@ FROM iojs
 
 ADD ./sbbs-scripts /sbbs-scripts
 
+RUN chmod +x /sbbs-scripts/sbbs-build
+
 RUN /sbbs-scripts/sbbs-build && rm /sbbs-scripts/sbbs-build
 
 ENV SBBSCTRL /sbbs/ctrl
