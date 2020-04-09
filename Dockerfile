@@ -4,7 +4,7 @@ FROM iojs
 
 ADD ./sbbs-scripts /sbbs-scripts
 
-RUN chmod +x /sbbs-scripts/sbbs-build
+RUN chmod +x /sbbs-scripts/*
 
 RUN /sbbs-scripts/sbbs-build && rm /sbbs-scripts/sbbs-build
 
